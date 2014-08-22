@@ -1,0 +1,315 @@
+<html>
+  
+  <head>
+    
+    <style>
+    
+      body *, body *::after, body *::before {
+        box-sizing: border-box;
+      }
+      
+      body, html {
+        padding: 0;
+        margin: 0;
+        font-family: Helvetica;
+      }
+      
+      .container:nth-of-type(1):after {
+        position: absolute;
+        bottom: 20px;
+        width: 100px;
+        height: 70px;
+
+        z-index: 3;
+        content: '(scroll me)';
+        color: #777777;
+        left: 20%;
+        margin-left: -10px;
+        text-align: center;
+        background: url(http://rsmuniversity.com/wp-content/themes/rsm/library/images/down-arrow-icon.png) center bottom no-repeat;
+        background-size: 40px auto;
+      }
+      
+      .container {
+        font-family: Arial, sans-serif;
+        height: 100%;
+        position:relative;
+      }
+      
+      .container > .description {
+        position:absolute;
+        top:50%;
+        margin-top:-125px;
+      }
+      
+      .description {
+        left: 0;
+        width: 40%;
+        height: 250px;
+        font-size: 2em;
+        display: table;
+        text-align: right;
+        padding: 20px;
+        margin-right: 20px;
+      }
+      
+      .description p {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      
+      .demo-holder {
+        position:absolute;
+        height: 100%;
+        width: 55%;
+        left: 42%;
+      }
+      
+      .demo {
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        height: 80%;
+        border: thin solid #888;
+      }
+      
+      .demo::before {
+        position: absolute;
+        top:-43px;
+        left: 0;
+        right: 0;
+        content: ' ';
+        height: 42px;
+        background: url(https://s3-us-west-1.amazonaws.com/drwrchrds-hosted-pics/browser-toolbar.png) top center no-repeat;
+        background-size: 100% auto;
+        margin-left: -1px;
+        margin-right: -1px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+      }
+      
+      code {
+        display: block;
+        padding: 15px 0;
+      }
+      
+      .demo p {
+        font-size: .8em;
+      }
+      
+      .demo-holder:hover .demo {
+        
+      }
+      
+    
+    </style>
+    
+  </head>
+  <body>
+    
+    <div class='container'>
+      <div class='description'>
+        <p>How to: <b style='display:block;font-size:1.5em;padding:10px 0;'>CENTER STUFF</b> on your page</p></div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <p>
+Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+</p>
+
+<p>
+We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
+</p>
+</div>
+      </div>
+    </div>
+    
+    <div class='container'>
+      <div class='description'>
+        <p>This is your web page.</p></div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <p>
+Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+</p>
+
+<p>
+We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
+</p>
+
+</div>
+      </div>
+    </div>
+    
+    <div class='container'>
+      <div class='description'>
+        <p>
+          <b style='display:block;font-size:1.5em;padding:10px 0;'>
+            PART 1: Centering Horizontally</b>
+          Most web pages don't go all the way to the edge, so neither should ours!
+        </p></div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <p>
+Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+</p>
+
+<p>
+We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
+</p>
+
+</div>
+      </div>     
+    </div>
+    
+    <div class='container'>
+      <div class='description'>
+        <p>
+          DO NOT USE:
+          <code>text-align: center;</code>
+          Are books center-aligned? No. Neither should your page be.
+        </p>
+      </div>
+      <div class='demo-holder'>
+        <div class='demo' style='text-align: center'>
+          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <p>
+Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+</p>
+
+<p>
+We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
+</p>
+
+</div>
+      </div>
+    </div>
+    
+    <div class='container'>
+      <div class='description'>
+        <p>
+          DO USE:
+          <code>
+            margin
+          </code>
+          Are books center-aligned? No. Neither should your page be.
+        </p>
+      </div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <p>
+Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+</p>
+
+<p>
+We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
+</p>
+
+</div> 
+      </div>     
+    </div>
+    
+    <div class='container'>
+      <div class='description'>
+        <p>Make the box-shadows larger by increasing the 'spread' value.</p></div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <p>
+Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+</p>
+
+<p>
+We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
+</p>
+
+</div> 
+      </div>     
+    </div>
+    
+    <div class='container'>
+      <div class='description'>
+        <p>Add lots more box-shadows.</p></div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <p>
+Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+</p>
+
+<p>
+We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
+</p>
+
+</div> 
+      </div>     
+    </div>
+    
+    <div class='container'>
+      <div class='description'>
+        <p>Add even more box-shadows. Turns out you can add just about as many box shadows as you like.</p></div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <p>
+Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+</p>
+
+<p>
+We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
+</p>
+
+</div> 
+      </div>     
+    </div>
+    
+    <div class='container'>
+      <div class='description'>
+        <p>Add a few more box-shadows, and voila! You have a logo.</p></div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <p>
+Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+</p>
+
+<p>
+We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
+</p>
+
+</div> 
+      </div>     
+    </div>
+    
+    <div class='container'>
+      <div class='description'>
+        <p><b style='display:block;font-size:1.5em;padding:10px 0;'>BONUS ROUND</b> 
+          given the right :hover rule, <br>
+          this is a cool way to make a logo appear...</p></div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <p>
+Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+</p>
+
+<p>
+We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
+</p>
+
+</div> 
+      </div>     
+    </div>
+    
+
+    <div style='margin-top:20px;text-align:center;'>
+      by andrew richards <a href='http://www.drwrchrds.com'>site</a> 
+      <a href='http://twitter.com/drwrchrds'>@drwrchrds</a>
+      <a href='http://github.com/drwrchrds'>github</a> 
+      <a href='http://linkedin.com/in/drwrchrds'>linkedin</a>
+    </div>
+  </body>
+</html>
