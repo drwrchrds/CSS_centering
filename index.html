@@ -14,6 +14,21 @@
         font-family: Helvetica;
       }
       
+      code {
+        background-color: lightgrey;
+        padding: .1em .4em .2em .4em;
+        border-radius: .2em;
+        font-size: .8em;
+        line-height: 1.5em;
+        display: inline-block;
+        margin-bottom: .2em;
+        vertical-align:middle;
+      }
+      
+      span.no-wrap {
+        white-space: nowrap;
+      }
+      
       .container:nth-of-type(1):after {
         position: absolute;
         bottom: 20px;
@@ -23,7 +38,7 @@
         z-index: 3;
         content: '(scroll me)';
         color: #777777;
-        left: 20%;
+        left: 24%;
         margin-left: -10px;
         text-align: center;
         background: url(http://rsmuniversity.com/wp-content/themes/rsm/library/images/down-arrow-icon.png) center bottom no-repeat;
@@ -32,7 +47,9 @@
       
       .container {
         font-family: Arial, sans-serif;
+        
         height: 100%;
+        min-height: 580px;
         position:relative;
       }
       
@@ -67,9 +84,9 @@
       
       .demo {
         position: absolute;
-        top: 10%;
+        top: 12%;
         width: 100%;
-        height: 80%;
+        bottom: 6%;
         border: thin solid #888;
       }
       
@@ -88,10 +105,7 @@
         border-top-right-radius: 3px;
       }
       
-      code {
-        display: block;
-        padding: 15px 0;
-      }
+
       
       .demo p {
         font-size: .8em;
@@ -101,6 +115,20 @@
         
       }
       
+      .rsvp-holder {
+        width: 280px;
+        height: 180px;
+        background: url(http://nicoralaw.com/wp-content/uploads/2012/06/Envelope-Icon.jpg) center center no-repeat;
+        background-size: auto 100%;
+      }
+      
+      .rsvp {
+        background-color: blue;
+        color: white;
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+      }
     
     </style>
     
@@ -109,10 +137,14 @@
     
     <div class='container'>
       <div class='description'>
-        <p>How to: <b style='display:block;font-size:1.5em;padding:10px 0;'>CENTER STUFF</b> on your page</p></div>
+        <p>
+          How to: 
+          <b style='display:block;font-size:1.5em;padding:10px 0;'>CENTER STUFF</b>
+          on your page</p></div>
       <div class='demo-holder'>
         <div class='demo'>
           <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <h2>An Evening with Bill Shatner</h2>
           <p>
 Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
 </p>
@@ -123,13 +155,18 @@ We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece
 </div>
       </div>
     </div>
+
     
     <div class='container'>
       <div class='description'>
-        <p>This is your web page.</p></div>
+        <p>
+          This is your web page.<br><br>
+          It's pretty rad.</p>
+      </div>
       <div class='demo-holder'>
         <div class='demo'>
           <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <h2>An Evening with Bill Shatner</h2>
           <p>
 Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
 </p>
@@ -147,11 +184,13 @@ We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece
         <p>
           <b style='display:block;font-size:1.5em;padding:10px 0;'>
             PART 1: Centering Horizontally</b>
-          Most web pages don't go all the way to the edge, so neither should ours!
+          <br>
+          Most web page content doesn't <b>live on the edge</b>, so neither should yours!
         </p></div>
       <div class='demo-holder'>
         <div class='demo'>
           <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <h2>An Evening with Bill Shatner</h2>
           <p>
 Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
 </p>
@@ -169,12 +208,17 @@ We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece
         <p>
           DO NOT USE:
           <code>text-align: center;</code>
-          Are books center-aligned? No. Neither should your page be.
+          <br><br>
+          Are books center-aligned?
+          Nope. 
+          <br><br>
+          Neither should your page be.
         </p>
       </div>
       <div class='demo-holder'>
         <div class='demo' style='text-align: center'>
           <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <h2>An Evening with Bill Shatner</h2>
           <p>
 Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
 </p>
@@ -192,14 +236,59 @@ We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece
         <p>
           DO USE:
           <code>
-            margin
-          </code>
-          Are books center-aligned? No. Neither should your page be.
+            margin-left: auto; <br>margin-right: auto;
+          </code><br>
+          (a.k.a. <code>margin: 0 auto;</code>)
+          <br><br>
+          Let's squeeze our content in from the sides!
         </p>
       </div>
       <div class='demo-holder'>
         <div class='demo'>
+          <div class='page-wrap'>
+            <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+            <h2>An Evening with Bill Shatner</h2>
+            <p>Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.</p>
+
+            <p>We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.</p>
+          </div>
+        </div> 
+      </div>     
+    </div>
+    
+    <div class='container'>
+      <div class='description'>
+        <p><b>Step 1:</b><br>Wrap your page content in a <span class='no-wrap'><code>div</code>,</span> and give it a class. <br><br><code>class='page-wrap'</code> will do.</p>
+      </div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <div class='page-wrap'>
           <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <h2>An Evening with Bill Shatner</h2>
+          <p>
+            Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+          </p>
+
+          <p>
+            We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
+          </p>
+
+          </div> 
+        </div>
+      </div>     
+    </div>
+    
+    <div class='container'>
+      <div class='description'>
+        <p><b>Step 2:</b><br>
+          Give it <code>margin-left: auto;</code> and <code>margin-right: auto;</code><br><br> Wait, why aren't you squished?
+        </p>
+      </div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <div class='page-wrap' style='margin-left:auto;margin-right:auto;'>
+          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <h2>An Evening with Bill Shatner</h2>
           <p>
 Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
 </p>
@@ -207,100 +296,365 @@ Now what are the possibilities of warp drive? Cmdr Riker's nervous system has be
 <p>
 We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
 </p>
+          </div>
+        </div> 
+      </div>     
+    </div>
+    
+    <div class='container'>
+      <div class='description'>
+        <p>
+          <b>Step 3:</b><br>
+          <code>margin</code> won't do anything if our <code>div</code> has 100% width.<br> (...which it does, by default.)<br><br>
+          Let's give it <span class='no-wrap'><code>width: 60%;</code>.</span> </p></div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <div class='page-wrap' style='margin-left:auto;margin-right:auto;width:60%;'>
+          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <h2>An Evening with Bill Shatner</h2>
+          <p>
+            Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.</p>
 
+            <p>
+              We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.</p>
+          </div>
+        </div>
+      </div>     
+    </div>
+    
+    <div class='container'>
+      <div class='description'>
+        <p>Voila!<br><br>
+          Our page content is nicely centered.
+        </p>
+      </div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <div class='page-wrap' style='margin-left:auto;margin-right:auto;width:60%;'>          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+          <h2>An Evening with Bill Shatner</h2>
+          <p>
+Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+</p>
+
+<p>
+We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
+</p>
+</div>
 </div> 
       </div>     
     </div>
     
     <div class='container'>
       <div class='description'>
-        <p>Make the box-shadows larger by increasing the 'spread' value.</p></div>
+        <p>
+          <b style='display:block;font-size:1.5em;padding:10px 0;'>
+            PART 2: Centering Vertically <em>AND</em> Horizontally</b>
+          <br>
+          When margin just isn't enough.
+        </p>
+      </div>
       <div class='demo-holder'>
         <div class='demo'>
-          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
-          <p>
-Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
-</p>
-
-<p>
-We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
-</p>
-
-</div> 
+          <div class='page-wrap' style='margin-left:auto;margin-right:auto;width:60%;'>            <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+            <h2>An Evening with Bill Shatner</h2>
+            <p>
+              Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+            </p>
+            <div class='rsvp-holder'>
+              <button class='rsvp'>
+                RSVP Now!
+              </button>
+            </div>
+          </div>
+        </div>
       </div>     
     </div>
     
     <div class='container'>
       <div class='description'>
-        <p>Add lots more box-shadows.</p></div>
+        <p>
+          So you want to let your site visitors sign up for the party. Cool!<br><br>
+          
+          How do we get the RSVP button to be <b>centered on the envelope?</b>
+        </p>
+      </div>
       <div class='demo-holder'>
         <div class='demo'>
-          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
-          <p>
-Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
-</p>
-
-<p>
-We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
-</p>
-
-</div> 
+          <div class='page-wrap' style='margin-left:auto;margin-right:auto;width:60%;'>            <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+            <h2>An Evening with Bill Shatner</h2>
+            <p>
+              Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+            </p>
+            <div class='rsvp-holder'>
+              <button class='rsvp'>
+                RSVP Now!
+              </button>
+            </div>
+          </div>
+        </div>
       </div>     
     </div>
     
     <div class='container'>
       <div class='description'>
-        <p>Add even more box-shadows. Turns out you can add just about as many box shadows as you like.</p></div>
+        <p>
+          DO NOT USE: <code>margin: 0 auto;</code><br><br>
+          
+          We can use <code>margin-left: auto;</code> and <code>margin-right: auto;</code> to center it horizontally.<br><br>
+          
+          But <code>margin-top: auto;</code> and <code>margin-bottom: auto;</code> <b>won't help us</b> in the same fashion.
+        </p>
+      </div>
       <div class='demo-holder'>
         <div class='demo'>
-          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
-          <p>
-Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
-</p>
-
-<p>
-We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
-</p>
-
-</div> 
+          <div class='page-wrap' style='margin-left:auto;margin-right:auto;width:60%;'>            <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+            <h2>An Evening with Bill Shatner</h2>
+            <p>
+              Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+            </p>
+            <div class='rsvp-holder'>
+              <button class='rsvp'>
+                RSVP Now!
+              </button>
+            </div>
+          </div>
+        </div>
       </div>     
     </div>
     
     <div class='container'>
       <div class='description'>
-        <p>Add a few more box-shadows, and voila! You have a logo.</p></div>
+        <p>
+          DO USE: <code>position: absolute;</code><br><br>
+          
+          The <code>position</code> property allows us to place our elements explicitly.
+        </p>
+      </div>
       <div class='demo-holder'>
         <div class='demo'>
-          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
-          <p>
-Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
-</p>
-
-<p>
-We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
-</p>
-
-</div> 
+          <div class='page-wrap' style='margin-left:auto;margin-right:auto;width:60%;'>            <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+            <h2>An Evening with Bill Shatner</h2>
+            <p>
+              Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+            </p>
+            <div class='rsvp-holder'>
+              <button class='rsvp'>
+                RSVP Now!
+              </button>
+            </div>
+          </div>
+        </div>
       </div>     
     </div>
     
     <div class='container'>
       <div class='description'>
-        <p><b style='display:block;font-size:1.5em;padding:10px 0;'>BONUS ROUND</b> 
-          given the right :hover rule, <br>
-          this is a cool way to make a logo appear...</p></div>
+        <p>
+          <b>Step 1:</b><br><br>
+          Give our button <code>position: absolute;</code>
+        </p>
+      </div>
       <div class='demo-holder'>
         <div class='demo'>
-          <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
-          <p>
-Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
-</p>
+          <div class='page-wrap' style='margin-left:auto;margin-right:auto;width:60%;'>            <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+            <h2>An Evening with Bill Shatner</h2>
+            <p>
+              Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+            </p>
+            <div class='rsvp-holder'>
+              <button class='rsvp' style='position:absolute;'>
+                RSVP Now!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>     
+    </div>
+    
+    
+    <div class='container'>
+      <div class='description'>
+        <p>
+          Once we've defined a <code>position</code> property on an element, we can tell it where to place itself relative to the <code>top</code>, <code>right</code>, <code>bottom</code> and <code>left</code> edges of its parent.
+        </p>
+      </div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <div class='page-wrap' style='margin-left:auto;margin-right:auto;width:60%;'>            <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+            <h2>An Evening with Bill Shatner</h2>
+            <p>
+              Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+            </p>
+            <div class='rsvp-holder'>
+              <button class='rsvp' style='position:absolute;'>
+                RSVP Now!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>     
+    </div>
+    
+    
+    <div class='container'>
+      <div class='description'>
+        <p>
+          <b>Step 2:</b><br><br>
+          Give our button <code>top: 50%;</code> and <code>left: 50%;</code><br><br>
 
-<p>
-We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.
-</p>
-
-</div> 
+          Oh no! Why is it <b>outside of the envelope</b> completely, now?
+        </p>
+      </div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <div class='page-wrap' style='margin-left:auto;margin-right:auto;width:60%;'>            <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+            <h2>An Evening with Bill Shatner</h2>
+            <p>
+              Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+            </p>
+            <div class='rsvp-holder'>
+              <button class='rsvp' style='position:absolute;top:50%;left:50%;'>
+                RSVP Now!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>     
+    </div>
+    
+    
+    <div class='container'>
+      <div class='description'>
+        <p>
+          <code>position: absolute;</code> tells our element to position itself relative to the <b>next parent element</b> up the DOM chain with a <code>position</code> property defined.<br><br>
+          
+          In this case, that is the <code>window</code>.
+        </p>
+      </div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <div class='page-wrap' style='margin-left:auto;margin-right:auto;width:60%;'>            <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+            <h2>An Evening with Bill Shatner</h2>
+            <p>
+              Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+            </p>
+            <div class='rsvp-holder'>
+              <button class='rsvp' style='position:absolute;top:50%;left:50%;'>
+                RSVP Now!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>     
+    </div>
+    
+    
+    <div class='container'>
+      <div class='description'>
+        <p>
+          <b>Step 3:</b><br><br>
+          
+          Give the envelope element <code>position: relative;</code> <span class='no-wrap'>- <code>position:absolute;</code>'s</span> innocuous cousin.<br><br>
+          
+          That's better! But still not centered - what gives?
+        </p>
+      </div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <div class='page-wrap' style='margin-left:auto;margin-right:auto;width:60%;'>            <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+            <h2>An Evening with Bill Shatner</h2>
+            <p>
+              Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+            </p>
+            <div class='rsvp-holder' style='position:relative;'>
+              <button class='rsvp' style='position:absolute;top:50%;left:50%;'>
+                RSVP Now!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>     
+    </div>
+    
+    
+    <div class='container'>
+      <div class='description'>
+        <p>
+          <code>top:50%;</code> and <code>left:50%;</code> tell our element where it's top and left edges should go.<br><br> So right now the <b>top-left corner</b> is in the center of our envelope.
+        </p>
+      </div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <div class='page-wrap' style='margin-left:auto;margin-right:auto;width:60%;'>            <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+            <h2>An Evening with Bill Shatner</h2>
+            <p>
+              Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+            </p>
+            <div class='rsvp-holder' style='position:relative;'>
+              <button class='rsvp' style='position:absolute;top:50%;left:50%;'>
+                RSVP Now!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>     
+    </div>
+    
+    
+    <div class='container'>
+      <div class='description'>
+        <p>
+          <b>Step 4:</b><br><br>
+          
+          Finally, let's give our <code>button</code> a <b>negative margin.</b><br><br>
+          
+          Add <code>margin-left: -(half of width);</code> and <code>margin-top: -(half of height);</code> to the <code>button</code> element.
+        </p>
+      </div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <div class='page-wrap' style='margin-left:auto;margin-right:auto;width:60%;'>            <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+            <h2>An Evening with Bill Shatner</h2>
+            <p>
+              Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+            </p>
+            <div class='rsvp-holder' style='position:relative;'>
+              <button class='rsvp' style='position:absolute;top:50%;left:50%;margin-top:-40px;margin-left:-40px;'>
+                RSVP Now!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>     
+    </div>
+    
+    
+    <div class='container'>
+      <div class='description'>
+        <p>
+          Lookin good! I think we're ready to <b>push this one to production :)</b><br><br>
+          
+          Read more on:<br>
+          <a href='http://css-tricks.com/absolute-positioning-inside-relative-positioning/'><code>position: absolute;</code></a><br>
+          <a href='http://stackoverflow.com/a/3170774/3662757'><code>margin: 0 auto;</code></a><br>
+          <a href='http://www.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css/#Negative-Margins'><code>centering in CSS</code></a>
+          
+        </p>
+      </div>
+      <div class='demo-holder'>
+        <div class='demo'>
+          <div class='page-wrap' style='margin-left:auto;margin-right:auto;width:60%;'>            <img src='https://pbs.twimg.com/profile_images/488481044190879744/s-npDmCf.jpeg' height='180px' width='180px'>
+            <h2>An Evening with Bill Shatner</h2>
+            <p>
+              Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+            </p>
+            <div class='rsvp-holder' style='position:relative;'>
+              <button class='rsvp' style='position:absolute;top:50%;left:50%;margin-top:-40px;margin-left:-40px;'>
+                RSVP Now!
+              </button>
+            </div>
+          </div>
+        </div>
       </div>     
     </div>
     
