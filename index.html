@@ -29,6 +29,33 @@
         white-space: nowrap;
       }
       
+      span.bad, span.good {
+        position:relative;
+      }
+      
+      span.bad::before, span.good::before {
+        position: absolute;
+        content: "";
+        background-size: auto 100%;
+        height: 100px;
+        width: 90px;
+        top:50%;
+        margin-top:-50px;
+        left: 50%;
+        margin-left: -45px;
+        opacity: .5;
+        
+      }
+
+      span.bad::before {
+          background-image:url(http://img3.wikia.nocookie.net/__cb20111013082836/neoencyclopedia/images/a/a2/X_mark.svg);
+      }
+
+      span.good::before {
+        background-image:url(http://www.clker.com/cliparts/2/k/n/l/C/Q/transparent-green-checkmark-hi.png);
+      }
+      
+      
       .container:nth-of-type(1):after {
         position: absolute;
         bottom: 20px;
@@ -49,7 +76,7 @@
         font-family: Arial, sans-serif;
         
         height: 100%;
-        min-height: 580px;
+        min-height: 680px;
         position:relative;
       }
       
@@ -88,6 +115,7 @@
         width: 100%;
         bottom: 6%;
         border: thin solid #888;
+
       }
       
       .demo::before {
@@ -206,7 +234,7 @@ We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece
     <div class='container'>
       <div class='description'>
         <p>
-          DO NOT USE:
+          <span class='bad'>DO NOT USE:</span>
           <code>text-align: center;</code>
           <br><br>
           Are books center-aligned?
@@ -234,7 +262,7 @@ We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece
     <div class='container'>
       <div class='description'>
         <p>
-          DO USE:
+          <span class='good'>DO USE:</span>
           <code>
             margin-left: auto; <br>margin-right: auto;
           </code><br>
@@ -398,7 +426,8 @@ We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece
     <div class='container'>
       <div class='description'>
         <p>
-          DO NOT USE: <code>margin: 0 auto;</code><br><br>
+          <span class='bad'>DO NOT USE:</span>
+          <code>margin: 0 auto;</code><br><br>
           
           We can use <code>margin-left: auto;</code> and <code>margin-right: auto;</code> to center it horizontally.<br><br>
           
@@ -425,7 +454,7 @@ We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece
     <div class='container'>
       <div class='description'>
         <p>
-          DO USE: <code>position: absolute;</code><br><br>
+          <span class='good'>DO USE:</span> <code>position: absolute;</code><br><br>
           
           The <code>position</code> property allows us to place our elements explicitly.
         </p>
